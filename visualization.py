@@ -5,6 +5,7 @@ import numpy as np
 from dtw import dtw
 
 
+
 def plot_waveform(wav_path, sampling_rate=16000):
     # 加载语音文件
     y, sr = librosa.load(wav_path, sr=sampling_rate)
@@ -91,11 +92,6 @@ def plot_fourier_transform_example():
     plt.show()
 
 
-from dtw import dtw
-import numpy as np
-import matplotlib.pyplot as plt
-
-
 def compute_cosine_similarity(x, y):
     numerator = np.dot(x, y.T)  # 分子
     denominator = np.linalg.norm(x) * np.linalg.norm(y)  # 分母
@@ -125,6 +121,8 @@ def plot_similarities(similarities):
     plt.ylabel('Similarity')
     plt.xlabel('Time')
     plt.show()
+
+
 
 
 if __name__ == '__main__':
