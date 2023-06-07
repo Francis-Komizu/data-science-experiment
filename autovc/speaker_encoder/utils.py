@@ -4,7 +4,7 @@ import sys
 sys.path.append('speaker_encoder')
 
 from model_bl import D_VECTOR
-from make_spect import get_spect_from_audio
+from autovc.make_spect import get_spect_from_audio
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
@@ -34,6 +34,6 @@ def get_embedding_from_audio(wav_path, encoder):
 
 
 if __name__ == '__main__':
-    pass
+    encoder = load_speaker_encoder()
 
 
