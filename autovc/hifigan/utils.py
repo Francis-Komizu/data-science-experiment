@@ -4,7 +4,7 @@ import json
 import torch
 from scipy.io.wavfile import write
 
-from hifigan import Generator as HiFiGAN
+from autovc.hifigan.models import Generator as HiFiGAN
 
 MAX_WAV_VALUE = 32768.0
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -58,7 +58,7 @@ def load_vocoder(config_path, checkpoint_path):
     return vocoder, h
 
 
-def vocode(input_spect, output_path, vocoder, h):
+def vocode(input_spect, output_path, vocoder):
     with torch.no_grad():
         x = torch.FloatTensor(input_spect).to(device)
         if x.shape[1] == 80:

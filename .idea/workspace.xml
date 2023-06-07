@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4a93bb0-6257-4b03-ad42-49f247d82379" name="Changes" comment="# Types:&#10;# feat: A new feature.&#10;# fix: A bug fix.&#10;# docs: Documentation only changes.&#10;# style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).&#10;# refractor: A code change that neither fixes a bug nor adds a feature.&#10;# perf: A code change that improves performance.&#10;# test: Adding missing tests.&#10;# chore: Changes to the build process or auxiliary tools and libraries such as documentation generation.&#10;&#10;[type]: changelog (#issue number)&#10;&#10;# Provide more details if necessary.&#10;# body">
-      <change afterPath="$PROJECT_DIR$/autovc/wavs/samples/data-science.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autovc/wavs/samples/welcome.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/audios/welcome.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/units/libri_units.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/units/units1.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/units/units2.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/units/user_units.npy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autovc/speaker_encoder/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/autovc/speaker_encoder/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autovc/inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autovc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/autovc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autovc/conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/autovc/conversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autovc/emb_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/autovc/emb_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autovc/hifigan/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/autovc/hifigan/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autovc/hifigan/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/autovc/hifigan/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autovc/visual_aids.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/units/libri_units.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/units/units1.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/units/units2.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/units/user_units.npy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Desktop/cs/introduction-to-data-science/one-for-many/samples/units",
+    "last_opened_file_path": "D:/Desktop/cs/introduction-to-data-science/data-science-experiment",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>

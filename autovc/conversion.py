@@ -50,7 +50,6 @@ def get_average_emb(emb_org, emb_trg, weight=0.5, scale=1.0):
     return emb_avg
 
 
-
 if __name__ == '__main__':
     G = Generator(32, 256, 512, 32).eval().to(device)
     g_checkpoint = torch.load('autovc.ckpt', map_location=torch.device('cpu'))

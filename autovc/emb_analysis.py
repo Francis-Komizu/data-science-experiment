@@ -7,6 +7,7 @@ from tqdm import tqdm
 
 from speaker_encoder import load_speaker_encoder, get_embedding_from_audio
 
+
 def get_speaker_list(wav_dir):
     wav_files = os.listdir(wav_dir)
     speaker_list = []
@@ -19,6 +20,7 @@ def get_speaker_list(wav_dir):
 
     return speaker_list
 
+
 def get_embeddings(wav_dir, encoder):
     wav_files = os.listdir(wav_dir)
     embs = None
@@ -30,7 +32,7 @@ def get_embeddings(wav_dir, encoder):
             speaker_list.append(speaker_num)
             wav_path = os.path.join(wav_dir, wav_file)
             emb = get_embedding_from_audio(wav_path, encoder)  # [1, 256]
-            emb = emb.squeeze(0)    # [256]
+            emb = emb.squeeze(0)  # [256]
 
             if embs is None:
                 embs = emb
@@ -51,6 +53,7 @@ def get_2d_embeddings(embs):
     np.save(f'embeddings_2d_{len(embs)}.npy', embs_2d)
 
     return embs_2d
+
 
 def plot_embeddings(embs, speaker_list):
     fig, ax = plt.subplots()

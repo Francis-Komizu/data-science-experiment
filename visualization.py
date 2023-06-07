@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from dtw import dtw
 
+
 def plot_waveform(wav_path, sampling_rate=16000):
     # 加载语音文件
     y, sr = librosa.load(wav_path, sr=sampling_rate)
